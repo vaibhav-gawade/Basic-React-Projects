@@ -1,0 +1,7 @@
+export {default as Home} from "./home"
+export {default as Contact} from "./contact"
+export {default as AboutUs} from "./aboutUs"
+export {default as Login} from "./login"
+export {default as GetStarted} from "./getStarted"
+export {default as User} from "./user"
+export {default as Github} from "./Github"
