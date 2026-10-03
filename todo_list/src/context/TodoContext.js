@@ -1,6 +1,6 @@
 import { createContext,useContext } from "react";
 
-export const TodoContext = createContext({
+export const TodoContext = createContext({      // give this export to the todoProvider to provide the context
     Todos : [
         {
             id : 1,
@@ -14,8 +14,8 @@ export const TodoContext = createContext({
     ToggleTodo : (id) => {}
 })
 
-export const useTodo = () => {
+export const useTodo = () => {              // hook for the sending of the current data above in the tree so they can use it
     return useContext(TodoContext);
 }
 
-export const TodoProvider = TodoContext.Provider;
+export const TodoProvider = TodoContext.Provider;       // export to the palce who has its need
